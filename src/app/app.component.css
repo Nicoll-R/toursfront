@@ -1,0 +1,76 @@
+.sidenav {
+    width: 250px;
+    background-color:#5b3085;
+    border-radius: 0px !important;
+    
+}
+
+.main-content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-title{
+    margin-left: 20px;
+}
+
+.mat-toolbar {
+    background-color: white;  
+}
+
+.button{
+    background: #5b3085 !important;
+    border: none;
+}
+
+.contenedor{
+    background: #5b3085;
+    height: 10%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+.contenido{
+    background-color: white; 
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%; 
+  }
+  
+  .h1 {
+    margin: 0; 
+    flex-grow: 1; 
+  }
+  
+  .search-container {
+    margin-left: auto; 
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+
+/* Centra verticalmente las opciones del dashboard */
+.mat-nav-list {
+    height: 100%; /* Ocupa toda la altura del sidenav */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    padding-left: 20px; /* Añade un poco de padding para separar del borde */
+  }
+  
+  /* Ajusta el estilo de los elementos de la lista */
+  .mat-list-item {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
