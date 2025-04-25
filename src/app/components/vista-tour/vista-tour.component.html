@@ -1,28 +1,92 @@
-<div class="main">
-    <div class="tour">
-        <div class="card">
-            <div class="card-header">
-            Featured
-            </div>
-            <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+<!-- Contenedor principal -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">🌍 Tours Destacados</h2>
+  
+    <div class="row g-4">
+      <!-- Tour 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0 tour-card">
+          <img src="https://source.unsplash.com/featured/?travel" class="card-img-top" alt="Tour Image">
+          <div class="card-body">
+            <h5 class="card-title">Explora el Caribe</h5>
+            <p class="card-text">Un paraíso de aguas turquesa y playas blancas. Vive una experiencia inolvidable.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal1">Ver detalles</button>
+          </div>
+          <div class="card-footer bg-transparent border-top-0 text-muted">
+            Desde $499 por persona
+          </div>
         </div>
-    </div>
-    <div class="tour">
-        <div class="card">
-            <div class="card-header">
-            Featured
-            </div>
-            <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            
+      </div>
+  
+      <!-- Tour 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0 tour-card">
+          <img src="https://source.unsplash.com/featured/?mountains" class="card-img-top" alt="Tour Image">
+          <div class="card-body">
+            <h5 class="card-title">Aventura en los Andes</h5>
+            <p class="card-text">Senderismo, cultura y paisajes impresionantes en el corazón de Sudamérica.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal2">Ver detalles</button>
+          </div>
+          <div class="card-footer bg-transparent border-top-0 text-muted">
+            Desde $599 por persona
+          </div>
         </div>
+      </div>
+  
+      <!-- Tour 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0 tour-card">
+          <img src="https://source.unsplash.com/featured/?desert" class="card-img-top" alt="Tour Image">
+          <div class="card-body">
+            <h5 class="card-title">Misterios del Sahara</h5>
+            <p class="card-text">Explora el desierto más famoso del mundo en un tour lleno de magia y tradición.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tourModal3">Ver detalles</button>
+          </div>
+          <div class="card-footer bg-transparent border-top-0 text-muted">
+            Desde $699 por persona
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
+  </div>
+  
+  <!-- Modals de detalles -->
+  <div class="modal fade" id="tourModal1" tabindex="-1" aria-labelledby="tourModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tourModalLabel1">Detalles del Tour - Caribe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Disfruta de 7 días en las islas del Caribe, con todo incluido, excursiones acuáticas y hospedaje 5 estrellas.</p>
+          <ul>
+            <li>Transporte y vuelos incluidos</li>
+            <li>Actividades acuáticas y recreativas</li>
+            <li>Guía turístico bilingüe</li>
+          </ul>
+          <p><strong>Fechas disponibles:</strong> Todo el año</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="#" class="btn btn-success">Reservar ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Puedes duplicar los modales para los otros tours -->
+  <!-- TourModal2, TourModal3, etc., igual al de arriba -->
+  
+  <!-- Estilos adicionales rápidos -->
+  <style>
+    .tour-card:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+    }
+    .tour-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+  
